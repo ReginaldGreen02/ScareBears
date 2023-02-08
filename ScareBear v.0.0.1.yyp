@@ -5,12 +5,16 @@
   "resources": [
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},"order":1,},
     {"id":{"name":"Background","path":"sprites/Background/Background.yy",},"order":4,},
+    {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":3,},
     {"id":{"name":"pUnit","path":"objects/pUnit/pUnit.yy",},"order":2,},
+    {"id":{"name":"Helper","path":"scripts/Helper/Helper.yy",},"order":15,},
     {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},"order":2,},
     {"id":{"name":"cManager","path":"objects/cManager/cManager.yy",},"order":0,},
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},"order":0,},
+    {"id":{"name":"sPlayer","path":"sequences/sPlayer/sPlayer.yy",},"order":0,},
+    {"id":{"name":"Terry_AttackAnim","path":"sprites/Terry_AttackAnim/Terry_AttackAnim.yy",},"order":5,},
     {"id":{"name":"cSpawn","path":"objects/cSpawn/cSpawn.yy",},"order":1,},
-    {"id":{"name":"Terry","path":"sprites/Terry/Terry.yy",},"order":3,},
+    {"id":{"name":"Terry_IdleAnim","path":"sprites/Terry_IdleAnim/Terry_IdleAnim.yy",},"order":3,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [

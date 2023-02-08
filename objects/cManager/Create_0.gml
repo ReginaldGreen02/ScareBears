@@ -1,3 +1,5 @@
+randomize();
+
 enum phase{
 	init, 
 	startTurn,

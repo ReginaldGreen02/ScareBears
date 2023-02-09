@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "pUnit",
   "spriteId": {
-    "name": "Terry_IdleAnim",
-    "path": "sprites/Terry_IdleAnim/Terry_IdleAnim.yy",
+    "name": "Sprite1",
+    "path": "sprites/Sprite1/Sprite1.yy",
   },
   "solid": false,
   "visible": true,

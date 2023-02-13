@@ -10,6 +10,13 @@ switch(combatPhase){
 	
 	case  phase.startTurn:
 		BubbleSort(global.units);
+		for (var i= 0 ; i < ds_list_size(global.units); i++){
+			var inst = global.units[|i];
+			if(inst.turnFinished == false){
+				global.selectedUnit = inst;
+				break;
+			}
+		}
 		combatPhase = phase.wait;
 	break;
 	

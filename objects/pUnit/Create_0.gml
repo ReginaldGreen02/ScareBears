@@ -2,15 +2,16 @@
 #macro HEALTH 0
 #macro SKILLPOINTS 1
 #macro SPEED 2
+
 #macro IDLE 0
 #macro ATTACK 1
-#macro DEFEND 2
-#macro HURT 3
-#macro MISS 4
+#macro TODEFEND 2
+#macro DEFEND 3
+#macro HURT 4
+#macro MISS 5
 
 state = IDLE;
-state = ATTACK;
-state = DEFEND;
+
 base[HEALTH]  =10;
 base[SKILLPOINTS] = 5;
 base[SPEED] = irandom_range(1,10);
@@ -18,5 +19,7 @@ base[SPEED] = irandom_range(1,10);
 current[HEALTH] = base[@ HEALTH];
 current[SKILLPOINTS] = base[@ SKILLPOINTS];
 current[SPEED] = base[@ SPEED];
+
+turnFinished = false;
 
 // This is to set the speed of animations

@@ -2,6 +2,10 @@
 #macro HEALTH 0
 #macro SKILLPOINTS 1
 #macro SPEED 2
+#macro ATTACKPOWER 3
+#macro DEFENSEPOWER 4
+#macro ACCURACY 5
+// (Potential) #macro CURRENTACCURACY 5
 
 #macro IDLE 0
 #macro ATTACK 1
@@ -15,11 +19,32 @@ state = IDLE;
 base[HEALTH]  =10;
 base[SKILLPOINTS] = 5;
 base[SPEED] = irandom_range(1,10);
+base[ATTACKPOWER] = 2;
+base[DEFENSEPOWER] = 1;
+base[ACCURACY] = 0.5;
+// (Potential) base[CURRENTACCURACY] = 0.5;
+
  
 current[HEALTH] = base[@ HEALTH];
 current[SKILLPOINTS] = base[@ SKILLPOINTS];
 current[SPEED] = base[@ SPEED];
+current[ATTACKPOWER] = base[@ ATTACKPOWER];
+current[DEFENSEPOWER] = base[@ DEFENSEPOWER];
+current[ACCURACY] = base[@ ACCURACY];
 
 turnFinished = false;
 selected = false;
-// This is to set the speed of animations
+attackWillHit = false;
+incomingDamage = 0;
+
+function DamageUnit(amount){
+	var damage = amount - current[@DEFENSEPOWER];
+	if (damage < 0){
+		current[HEALTH] = current[@HEALTH];
+	} else{
+		ccurrent[@HEALTH] -= damage;
+	}
+	
+	//Does the same thing as if/else statement above in one line
+	//current[@HEALTH] -= max(0, damage);
+}

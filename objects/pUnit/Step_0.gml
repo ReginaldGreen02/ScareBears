@@ -5,6 +5,7 @@ switch(state){
 		}
 	case ATTACK:
 		if(layer_sequence_get_headpos(unitSequence) > attackEnd){
+			turnFinished = true;
 			layer_sequence_headpos(unitSequence, idleStart);
 			state = IDLE;
 		}

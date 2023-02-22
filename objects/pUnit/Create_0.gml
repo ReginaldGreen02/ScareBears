@@ -21,5 +21,5 @@ current[SKILLPOINTS] = base[@ SKILLPOINTS];
 current[SPEED] = base[@ SPEED];
 
 turnFinished = false;
-
+selected = false;
 // This is to set the speed of animations

@@ -17,6 +17,7 @@
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},"order":0,},
     {"id":{"name":"Terry_Defend","path":"sprites/Terry_Defend/Terry_Defend.yy",},"order":9,},
     {"id":{"name":"sPlayer","path":"sequences/sPlayer/sPlayer.yy",},"order":0,},
+    {"id":{"name":"vMarker","path":"sprites/vMarker/vMarker.yy",},"order":10,},
     {"id":{"name":"Terry_AttackAnim","path":"sprites/Terry_AttackAnim/Terry_AttackAnim.yy",},"order":5,},
     {"id":{"name":"cSpawn","path":"objects/cSpawn/cSpawn.yy",},"order":1,},
     {"id":{"name":"Terry_IdleAnim","path":"sprites/Terry_IdleAnim/Terry_IdleAnim.yy",},"order":3,},

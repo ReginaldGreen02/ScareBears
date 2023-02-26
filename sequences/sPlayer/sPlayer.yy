@@ -12,7 +12,11 @@
   "events": {
     "resourceType": "KeyframeStore<MessageEventKeyframe>",
     "resourceVersion": "1.0",
-    "Keyframes": [],
+    "Keyframes": [
+      {"resourceType":"Keyframe<MessageEventKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"MessageEventKeyframe","resourceVersion":"1.0","Events":[
+              "AttackSent",
+            ],},},"Disabled":false,"id":"afd5ab6f-f3b5-4a22-9b68-444f97151791","IsCreationKey":false,"Key":64.0,"Length":1.0,"Stretch":false,},
+    ],
   },
   "eventStubScript": null,
   "eventToFunction": {},
@@ -140,7 +144,7 @@
   ],
   "visibleRange": {
     "x": 0.0,
-    "y": 132.0,
+    "y": 131.0,
   },
   "volume": 1.0,
   "xorigin": 0,

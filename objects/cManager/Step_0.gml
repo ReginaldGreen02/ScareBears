@@ -31,7 +31,7 @@ switch(combatPhase){
 	break;
 	
 	case  phase.wait:
-		if(global.selectedUnit.turnFinished == true){
+		if(selectedFinished == true){
 			global.selectedUnit.selected = false;
 			unitsFinished++;
 			combatPhase = phase.process;
@@ -52,6 +52,7 @@ switch(combatPhase){
 	break;
 	
 	case  phase.endTurn:
+		selectedFinished = false;
 		combatPhase =phase.startTurn;
 	break;
 	

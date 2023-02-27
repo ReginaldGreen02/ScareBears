@@ -1,5 +1,5 @@
 
-draw_text_color(0,0,"cobat phase : " +string(combatPhase),c_black,c_black,c_black,c_black,bm_dest_alpha)
+draw_text_color(0,0,"combat phase : " +string(combatPhase)+ " selected target: "+string(global.selectedTargets),c_black,c_black,c_black,c_black,bm_dest_alpha)
 
 
 for(var i = 0 ; i < ds_list_size(global.units);i++){

@@ -39,10 +39,12 @@ switch(combatPhase){
 	break;
 	
 	case  phase.process:
-		combatPhase = phase.checkFinish;
+		if(processFinished)
+			combatPhase = phase.checkFinish;
 	break;
 	
 	case  phase.checkFinish:
+		processFinished = false;
 		//if(keyboard_check_released(vk_space))
 			combatPhase = phase.endTurn;
 		/*if(keyboard_check_released(vk_enter))
@@ -53,6 +55,7 @@ switch(combatPhase){
 	
 	case  phase.endTurn:
 		selectedFinished = false;
+		global.selectedTargets = noone;
 		combatPhase =phase.startTurn;
 	break;
 	

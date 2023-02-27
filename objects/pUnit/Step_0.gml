@@ -20,6 +20,7 @@ switch(state){
 		if(layer_sequence_get_headpos(unitSequence) > hurtEnd){
 			DamageUnit(incomingDamage);
 			layer_sequence_headpos(unitSequence, idleStart);
+			incomingDamage = 0;
 			state = IDLE;
 		}
 	break;

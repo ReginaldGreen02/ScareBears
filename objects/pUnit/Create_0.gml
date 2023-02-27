@@ -19,7 +19,7 @@ state = IDLE;
 base[HEALTH]  =10;
 base[SKILLPOINTS] = 5;
 base[SPEED] = irandom_range(1,10);
-base[ATTACKPOWER] = 2;
+base[ATTACKPOWER] = irandom_range(1,5);
 base[DEFENSEPOWER] = 1;
 base[ACCURACY] = 0.5;
 // (Potential) base[CURRENTACCURACY] = 0.5;
@@ -42,7 +42,7 @@ function DamageUnit(amount){
 	if (damage < 0){
 		current[HEALTH] = current[@HEALTH];
 	} else{
-		ccurrent[@HEALTH] -= damage;
+		current[@HEALTH] -= damage;
 	}
 	
 	//Does the same thing as if/else statement above in one line

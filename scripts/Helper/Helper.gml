@@ -27,8 +27,10 @@ function CheckForHit(){
 }
 
 function UnitAttack(){
-	if (global.selectedUnit.attackWillHit){
+	var unit = global.selectedUnit;
+	if (unit.attackWillHit){
 		with(global.selectedTargets){
+			incomingDamage = unit.current[@ ATTACKPOWER];
 			state = HURT;
 			layer_sequence_headpos(unitSequence, hurtStart);
 		}

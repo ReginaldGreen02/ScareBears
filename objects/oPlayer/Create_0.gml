@@ -18,5 +18,5 @@ defendEnd  = 103;
 hurtStart = 105;
 hurtEnd = 116;
 
-missStart = 119;
-missEnd = 130;
+missStart = 119; // 105
+missEnd = 130; // 116

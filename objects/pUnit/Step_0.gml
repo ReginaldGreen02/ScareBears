@@ -6,8 +6,13 @@ switch(state){
 	case ATTACK:
 		if(layer_sequence_get_headpos(unitSequence) > attackEnd){
 			turnFinished = true;
-			layer_sequence_headpos(unitSequence, idleStart);
-			state = IDLE;
+			if (attackWillHit){
+				layer_sequence_headpos(unitSequence, idleStart);
+				state = IDLE;
+			} else {
+				layer_sequence_headpos(unitSequence, missStart);
+				state = MISS;
+			}
 		}
 	break;
 	case MISS:

@@ -17,6 +17,7 @@ function BubbleSort(list){
 	}
 }
 
+// Function that checks whether Unit attack hits/misses
 function CheckForHit(){
 	var number = random(1);
 	var unit = global.selectedUnit;
@@ -26,13 +27,14 @@ function CheckForHit(){
 		unit.attackWillHit = false;
 }
 
+// Function that calculates Unit damage dealt and starts Hurt animation
 function UnitAttack(){
 	var unit = global.selectedUnit;
 	if (unit.attackWillHit){
 		with(global.selectedTargets){
-			incomingDamage = unit.current[@ ATTACKPOWER];
+			incomingDamage = unit.current[@ ATTACKPOWER]; //  (Potential) When bears boost stats, attack multiplier addition?
 			state = HURT;
-			layer_sequence_headpos(unitSequence, hurtStart);
+			layer_sequence_headpos(unitSequence, hurtStart); // Potential bug(?): May be activating on Player Unit and not selected target. Further tests needed.
 		}
 	}
 }

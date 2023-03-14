@@ -36,6 +36,8 @@ turnFinished = false;
 selected = false;
 attackWillHit = false;
 incomingDamage = 0;
+hpBarWidth = sprite_get_width(uiHP);
+hpBarHeight = sprite_get_height(uiHP);
 
 // Function that updates health when damage is dealt/received
 function DamageUnit(amount){

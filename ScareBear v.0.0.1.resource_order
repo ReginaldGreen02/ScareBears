@@ -19,6 +19,7 @@
     {"name":"Sprite2","order":1,"path":"sprites/Sprite2/Sprite2.yy",},
     {"name":"Background","order":4,"path":"sprites/Background/Background.yy",},
     {"name":"Sprite8","order":16,"path":"sprites/Sprite8/Sprite8.yy",},
+    {"name":"uiHP","order":11,"path":"sprites/uiHP/uiHP.yy",},
     {"name":"oPlayer","order":3,"path":"objects/oPlayer/oPlayer.yy",},
     {"name":"pUnit","order":2,"path":"objects/pUnit/pUnit.yy",},
     {"name":"Helper","order":15,"path":"scripts/Helper/Helper.yy",},

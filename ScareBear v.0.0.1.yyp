@@ -36,6 +36,7 @@
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
     {"id":{"name":"Background","path":"sprites/Background/Background.yy",},},
     {"id":{"name":"Sprite8","path":"sprites/Sprite8/Sprite8.yy",},},
+    {"id":{"name":"uiHP","path":"sprites/uiHP/uiHP.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"pUnit","path":"objects/pUnit/pUnit.yy",},},
     {"id":{"name":"Helper","path":"scripts/Helper/Helper.yy",},},

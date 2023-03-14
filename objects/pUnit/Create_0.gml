@@ -5,7 +5,7 @@
 #macro ATTACKPOWER 3
 #macro DEFENSEPOWER 4
 #macro ACCURACY 5
-// (Potential) #macro CURRENTACCURACY 5
+// #macro CURRENTACCURACY 5 // Potential addition for live accuracy updates
 
 #macro IDLE 0
 #macro ATTACK 1
@@ -22,7 +22,7 @@ base[SPEED] = irandom_range(1,10);
 base[ATTACKPOWER] = irandom_range(1,5);
 base[DEFENSEPOWER] = 1;
 base[ACCURACY] = 0.5;
-// (Potential) base[CURRENTACCURACY] = 0.5;
+// base[CURRENTACCURACY] = 0.5; // Potential addition for live accuracy updates
 
  
 current[HEALTH] = base[@ HEALTH];
@@ -37,14 +37,15 @@ selected = false;
 attackWillHit = false;
 incomingDamage = 0;
 
+// Function that updates health when damage is dealt/received
 function DamageUnit(amount){
-	var damage = amount - current[@DEFENSEPOWER];
+	var damage = amount - current[@DEFENSEPOWER]; // (Potential) When bears boost stats, defense multiplier addition?
 	if (damage < 0){
 		current[HEALTH] = current[@HEALTH];
 	} else{
 		current[@HEALTH] -= damage;
 	}
 	
-	//Does the same thing as if/else statement above in one line
+	//The following does the same thing as if/else statement above in one line:
 	//current[@HEALTH] -= max(0, damage);
 }

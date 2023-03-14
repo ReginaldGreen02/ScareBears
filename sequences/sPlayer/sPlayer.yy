@@ -15,10 +15,13 @@
     "Keyframes": [
       {"resourceType":"Keyframe<MessageEventKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"MessageEventKeyframe","resourceVersion":"1.0","Events":[
               "AttackSent",
-            ],},},"Disabled":false,"id":"7bcc0da8-e958-4812-b6d1-f7fa19840472","IsCreationKey":false,"Key":64.0,"Length":1.0,"Stretch":false,},
+            ],},},"Disabled":false,"id":"7004e429-4dea-441d-a77d-5f00f87228b4","IsCreationKey":false,"Key":64.0,"Length":1.0,"Stretch":false,},
       {"resourceType":"Keyframe<MessageEventKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"MessageEventKeyframe","resourceVersion":"1.0","Events":[
               "UnitHurt",
-            ],},},"Disabled":false,"id":"b1b4fee1-55b1-4a57-a888-fbe2600a8e6a","IsCreationKey":false,"Key":116.0,"Length":1.0,"Stretch":false,},
+            ],},},"Disabled":false,"id":"93517338-d4a7-4163-b557-68a3723d4214","IsCreationKey":false,"Key":116.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"Keyframe<MessageEventKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"MessageEventKeyframe","resourceVersion":"1.0","Events":[
+              "UnitMiss",
+            ],},},"Disabled":false,"id":"0da7a6b8-5793-4684-bd0b-a19853507faf","IsCreationKey":false,"Key":129.0,"Length":1.0,"Stretch":false,},
     ],
   },
   "eventStubScript": null,

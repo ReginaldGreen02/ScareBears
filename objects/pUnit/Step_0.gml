@@ -24,9 +24,16 @@ switch(state){
 	case HURT:
 		if(layer_sequence_get_headpos(unitSequence) > hurtEnd){
 			DamageUnit(incomingDamage);
-			layer_sequence_headpos(unitSequence, idleStart);
-			incomingDamage = 0;
-			state = IDLE;
+			if (current[@ HEALTH] > 0){
+				layer_sequence_headpos(unitSequence, idleStart);
+				incomingDamage = 0;
+				state = IDLE;
+			}
+			else {
+				layer_sequence_headpos(unitSequence, deathStart);
+				ds_list_delete(global.units,ds_list_find_index(global.units, id));
+				state = DEATH;
+			}
 		}
 	break;
 	case TODEFEND:
@@ -39,6 +46,11 @@ switch(state){
 		if(layer_sequence_get_headpos(unitSequence) > defendEnd){
 			layer_sequence_headpos(unitSequence, defendStart);
 			
+		}
+	break;
+	case DEATH:
+		if (layer_sequence_get_headpos(unitSequence) > deathEnd){
+			instance_destroy();
 		}
 	break;
 }

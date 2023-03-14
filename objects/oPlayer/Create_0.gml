@@ -20,3 +20,6 @@ hurtEnd = 116;
 
 missStart = 119; // 105
 missEnd = 130; // 116
+
+deathStart = 131;
+deathEnd = 142;

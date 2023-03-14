@@ -49,6 +49,7 @@
     {"id":{"name":"Terry_Defend","path":"sprites/Terry_Defend/Terry_Defend.yy",},},
     {"id":{"name":"sPlayer","path":"sequences/sPlayer/sPlayer.yy",},},
     {"id":{"name":"vMarker","path":"sprites/vMarker/vMarker.yy",},},
+    {"id":{"name":"Terry_DeathAnim","path":"sprites/Terry_DeathAnim/Terry_DeathAnim.yy",},},
     {"id":{"name":"Terry_AttackAnim","path":"sprites/Terry_AttackAnim/Terry_AttackAnim.yy",},},
     {"id":{"name":"cSpawn","path":"objects/cSpawn/cSpawn.yy",},},
     {"id":{"name":"Terry_IdleAnim","path":"sprites/Terry_IdleAnim/Terry_IdleAnim.yy",},},

@@ -13,6 +13,7 @@
 #macro DEFEND 3
 #macro HURT 4
 #macro MISS 5
+#macro DEATH 6
 
 state = IDLE;
 

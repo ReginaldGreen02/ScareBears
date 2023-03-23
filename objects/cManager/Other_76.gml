@@ -10,6 +10,7 @@ if (event_data[? "event_type"] == "sequence event"){
 			//}
 		break;
 		// If Unit Misses
+		case "UnitDeath": // Death of unit
 		case "UnitMiss": // Both processes will finish with true, therefore no break needed after this case statement.
 			show_debug_message("I missed!");
 		// If Unit is hurt

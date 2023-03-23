@@ -31,6 +31,9 @@
   "properties": [],
   "solid": false,
   "spriteId": null,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "vTargeting",
+    "path": "sprites/vTargeting/vTargeting.yy",
+  },
   "visible": true,
 }

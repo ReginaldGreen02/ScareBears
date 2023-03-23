@@ -1,3 +1,12 @@
+
+
+// The following 4 macros are ONLY for the UI functionality -- Nothing else!
+#macro Camera_Width camera_get_view_width(view_camera[0]) //Gets Width of Viewport 0
+#macro Camera_Height camera_get_view_height(view_camera[0]) //Gets Height of Viewport 0
+
+#macro Display_ScaleX display_get_gui_width()/Camera_Width // Gets the X space of the GUI items as World Space
+#macro Display_ScaleY display_get_gui_height()/Camera_Height // Gets the Y space of the GUI items as World Space
+
 // These are the stats for the character which are self described, if you dont know ask another team member
 #macro HEALTH 0
 #macro SKILLPOINTS 1

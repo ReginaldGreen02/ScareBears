@@ -49,6 +49,8 @@ incomingDamage = 0;
 hpBarWidth = sprite_get_width(uiHP);
 hpBarHeight = sprite_get_height(uiHP);
 
+drawTarget = false;
+
 // Function that updates health when damage is dealt/received
 function DamageUnit(amount){
 	var damage = amount - current[@DEFENSEPOWER]; // (Potential) When bears boost stats, defense multiplier addition?

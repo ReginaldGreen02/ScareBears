@@ -20,3 +20,4 @@ allowInput = false; // Prevents spamming left mouse click
 global.selectedUnit = noone;
 global.units = ds_list_create()
 global.selectedTargets = noone;
+global.targeting = false;

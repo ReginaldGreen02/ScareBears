@@ -1,5 +1,9 @@
 switch(combatPhase){
 	case  phase.init:
+		layer_set_visible(targetUI, false); //Set layer invisible
+		instance_deactivate_layer(targetUI); // Disable instance layer interaction
+		layer_set_visible(baseUI, false); // Set layer invisible, keep interaction possible
+	
 		for(var i = 0; i < instance_number(cSpawn); i++ ){
 			var spawner = instance_find(cSpawn, i);
 			var unit = instance_create_depth(spawner.x,spawner.y,0,oPlayer);
@@ -27,7 +31,12 @@ switch(combatPhase){
 				break;
 			}
 		}
-		allowInput = true;
+		
+		if (!allowInput){ // Check if allowInput is false
+			allowInput = true;
+			event_user(1); // Even turns on/off base layer
+		}
+		
 		combatPhase = phase.wait;
 	break;
 	
@@ -36,12 +45,27 @@ switch(combatPhase){
 			global.selectedUnit.selected = false;
 			unitsFinished++;
 			combatPhase = phase.process;
+			
+			event_user(0); // Flips allowInput between true and false
+			layer_set_visible(targetUI, false); // Hide layer
+			instance_deactivate_layer(targetUI); // Disable layer interaction
+			layer_set_visible(baseUI, false); // Hide layer
+			instance_deactivate_layer(baseUI); // Disable layer interaction
 		}
 	break;
 	
 	case  phase.process:
-		if(processFinished)
+		if(processFinished){
 			combatPhase = phase.checkFinish;
+			
+			global.targeting = false; // May be redundant
+			for (var i = 0; i < ds_list_size(global.units); i++){
+				with (global.units[|i]){
+					drawTarget = false; 
+				}
+			}
+		}
+
 	break;
 	
 	case  phase.checkFinish:
@@ -57,6 +81,9 @@ switch(combatPhase){
 	case  phase.endTurn:
 		selectedFinished = false;
 		global.selectedTargets = noone;
+		
+		ds_list_clear(global.targets); // Clear targets list
+		
 		combatPhase =phase.startTurn;
 	break;
 	

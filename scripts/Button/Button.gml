@@ -1,0 +1,7 @@
+function AttackButton(){
+	///
+}
+
+function CancelButton(){
+	///
+}

@@ -43,6 +43,7 @@
     {"id":{"name":"Helper","path":"scripts/Helper/Helper.yy",},},
     {"id":{"name":"Terry_toDefendAnim","path":"sprites/Terry_toDefendAnim/Terry_toDefendAnim.yy",},},
     {"id":{"name":"vButton","path":"sprites/vButton/vButton.yy",},},
+    {"id":{"name":"uiSP","path":"sprites/uiSP/uiSP.yy",},},
     {"id":{"name":"Button","path":"scripts/Button/Button.yy",},},
     {"id":{"name":"Terry_Hurt","path":"sprites/Terry_Hurt/Terry_Hurt.yy",},},
     {"id":{"name":"cSkills","path":"objects/cSkills/cSkills.yy",},},

@@ -23,6 +23,7 @@
 #macro HURT 4
 #macro MISS 5
 #macro DEATH 6
+#macro SKILL 7
 
 state = IDLE;
 
@@ -51,6 +52,48 @@ hpBarHeight = sprite_get_height(uiHP);
 
 drawTarget = false;
 defending = false;
+
+function UseSkillPoints(amount){
+	current[SKILLPOINTS] -= amount;
+}
+// Array of learned skills
+// Add additional bear skills here
+learnedSkill[0] = -1;
+learnedSkill[1] = -1;
+
+selectedSkill = -1; // Will hold skill info
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Function that updates health when damage is dealt/received
 // TODO: Add statement checking if unit is defending or not to mitigate damage received.

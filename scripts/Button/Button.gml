@@ -95,3 +95,7 @@ function DebugLose(){
 		combatPhase = phase.lose;
 	}
 }
+
+function DebugQuitGame(){
+	game_end();
+}

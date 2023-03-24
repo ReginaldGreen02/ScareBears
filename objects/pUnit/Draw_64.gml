@@ -11,4 +11,4 @@ draw_sprite_part(uiHP,1,0,0,hpBarWidth*_hp,hpBarHeight,xx-30,yy-80); // Updates 
 
 
 var _sp = current[@ SKILLPOINTS]/base[@ SKILLPOINTS];
-draw_sprite_part(uiSP,1,0,0,hpBarWidth*_sp,hpBarHeight,xx-95,yy-80); // Updates skillpoints bar to reflect current SP
+draw_sprite_part(uiSP,1,0,0,hpBarWidth*_sp,hpBarHeight,xx+35,yy-80); // Updates skillpoints bar to reflect current SP

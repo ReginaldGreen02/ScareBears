@@ -73,7 +73,7 @@ function SkillButton(){ // Use button player chooses
 			event_user(2); 
 			event_user(3); 
 			event_user(0); // Enable input
-			}
+		}
 	}else {
 		show_message("Not enough skill points!");
 	}

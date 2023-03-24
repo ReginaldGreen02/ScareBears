@@ -21,6 +21,11 @@ enum skillElement{
 	ice
 };
 
+enum skill{
+	slash,
+	multiSlash
+};
+
 // Constructor function for skill object
 Skill = function(_name, _element, _type, _healthChange, _cost, _action) constructor {
 	name = _name;

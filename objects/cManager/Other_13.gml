@@ -7,5 +7,5 @@ if (layer_get_visible(skillsUI)){ // Is skillsUI visible?
 		var _btn = global.skillsButtons[|i];
 		_btn.Label = global.selectedUnit.learnedSkill[i].name; // TODO: Set learnedSkill to skill name 
 	}
-	instance_activate_layer(baseUI);
+	instance_activate_layer(skillsUI);
 }

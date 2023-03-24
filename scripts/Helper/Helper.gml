@@ -51,13 +51,25 @@ function unitDefend(){
 }
 
 function UnitSkill(){
-	//TODO: Fill in
+	if (global.selectedUnit.attackWillHit && !cManager.skillSent){
+		cManager.skillSent = true;
+		for (var i = 0; i < ds_list_size(global.selectedTargets); i++){
+			with (global.selectedTargets[|i]){
+				if (defending){
+					defending = false;
+				}
+				incomingDamage = global.selectedUnit.selectedSkill.healthChange;
+				state = HURT;
+				layer_sequence_headpos(unitSequence, hurtStart);
+			}
+		}
+	}
 }
 
 function singleTargetAttack(_unit){
-	//TODO: Fill in
+	ds_list_add(global.selectedTargets, _unit);
 }
 
 function multiTargetAttack(){
-	//TODO: Fill in
+	ds_list_copy(global.selectedTargets, global.targets); // id is the list to copy to, source is where we copy from;
 }

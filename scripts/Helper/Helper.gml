@@ -31,15 +31,17 @@ function CheckForHit(){
 function UnitAttack(){
 	var unit = global.selectedUnit;
 	if (unit.attackWillHit){
-		with(global.selectedTargets){
+		for(var i = 0; i < ds_list_size(global.selectedTargets); i++){
+			with(global.selectedTargets[|i]){
 			
-			if (defending){
-				defending = false;
+				if (defending){
+					defending = false;
+				}
+			
+				incomingDamage = unit.current[@ ATTACKPOWER]; //  (Potential) When bears boost stats, attack multiplier addition?
+				state = HURT;
+				layer_sequence_headpos(unitSequence, hurtStart); // Potential bug(?): May be activating on Player Unit and not selected target. Further tests needed.
 			}
-			
-			incomingDamage = unit.current[@ ATTACKPOWER]; //  (Potential) When bears boost stats, attack multiplier addition?
-			state = HURT;
-			layer_sequence_headpos(unitSequence, hurtStart); // Potential bug(?): May be activating on Player Unit and not selected target. Further tests needed.
 		}
 	}
 }
@@ -72,4 +74,23 @@ function singleTargetAttack(_unit){
 
 function multiTargetAttack(){
 	ds_list_copy(global.selectedTargets, global.targets); // id is the list to copy to, source is where we copy from;
+}
+
+// Very simple AI function
+function AIChoose(){
+	for (var i = 0; i < ds_list_size(global.units); i++){
+		var _inst = global.units[| i]; // store units in temp var
+		if (_inst.team != global.selectedUnit.team){ // Check team, if not the same as selectedUnit
+			ds_list_add(global.targets, _inst); // Add to target list
+		}
+	}
+	var _unit = global.targets[| irandom(1)]; // Grab random unit from list, story in var
+	ds_list_clear(global.selectedTargets); // clear selectedTarget's list
+	with (global.selectedUnit){ 
+		state = ATTACK;
+		layer_sequence_headpos(unitSequence, attackStart);
+	}
+	ds_list_add(global.selectedTargets, _unit);
+	cManager.aiDone = true;
+	
 }

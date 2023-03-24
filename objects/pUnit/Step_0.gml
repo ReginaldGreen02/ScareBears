@@ -75,8 +75,8 @@ switch(state){
 
 // Check if we are targeting and if current selected unit is not the same as the target.
 // Don't want player to attack themself.
-if ((global.targeting || global.skillTargeting) && global.selectedUnit != id){
-	if (position_meeting(mouse_x, mouse_y, id)){ //Check if mouse pos is colliding with the object
+if ((global.targeting || global.skillTargeting) && global.selectedUnit != noone){
+	if (position_meeting(mouse_x, mouse_y, id) && team != global.selectedUnit.team){ //Check if mouse pos is colliding with the object
 		drawTarget = true;
 		// (Potential) If using animated sprite for the targeting object
 		//target.x = x

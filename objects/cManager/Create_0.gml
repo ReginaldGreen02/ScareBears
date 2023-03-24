@@ -17,6 +17,10 @@ selectedFinished = false;
 processFinished = false;
 allowInput = false; // Prevents spamming left mouse click
 
+allies = 0; // # of allied units on the field
+enemies = 0; // # of enemy units on the field
+aiDone = false; // stops code from running before letting it proceed
+
 global.selectedUnit = noone;
 global.units = ds_list_create()
 //global.selectedTargets = noone; // Single item

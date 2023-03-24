@@ -2,7 +2,7 @@ function AttackButton(){
 	global.targeting = true;
 	for (var i = 0; i < ds_list_size(global.units); i++){
 		var _inst = global.units[| i]; // Get id of the instance and store in local var
-		if (_inst != global.selectedUnit){ // Check if instanced id is not the selected unit
+		if (_inst.team != global.selectedUnit.team){ // Check if instanced id is not the selected unit
 			ds_list_add(global.targets, _inst); // Add to targets list
 		}
 	}
@@ -63,7 +63,7 @@ function SkillButton(){ // Use button player chooses
 		global.selectedUnit.selectedSkill = global.selectedUnit.learnedSkill[@ ds_list_find_index(global.skillsButtons, id)];
 		for (var i = 0; i < ds_list_size(global.units); i++){
 			var _inst = global.units[| i];
-			if (_inst != global.selectedUnit){
+			if (_inst.team != global.selectedUnit.team){
 				// Temporary until we add teams
 				ds_list_add(global.targets, _inst);
 			}

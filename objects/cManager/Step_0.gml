@@ -87,19 +87,18 @@ switch(combatPhase){
 		allies = 0;
 		enemies = 0;
 		
-		
-		if(processFinished){
+		if (!global.processUnitDeath){ //fixes
 			global.selectedUnit = noone;
-			//processFinished = false;
-			
-			
+			//processFinished = false;			
 			global.targeting = false; // May be redundant
 			for (var i = 0; i < ds_list_size(global.units); i++){
 				with (global.units[|i]){
 					drawTarget = false; 
 				}
 			}
-			combatPhase = phase.checkFinish;
+			processFinished = true; // force processFinished = true
+			if (processFinished) //fixes
+				combatPhase = phase.checkFinish;
 		}
 
 	break;

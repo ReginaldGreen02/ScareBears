@@ -27,13 +27,14 @@ switch(state){
 		if(layer_sequence_get_headpos(unitSequence) > hurtEnd){
 			DamageUnit(incomingDamage);
 			if (current[@ HEALTH] > 0){
+				cManager.processFinished = true; // fixes...HACK
 				layer_sequence_headpos(unitSequence, idleStart);
 				incomingDamage = 0;
 				state = IDLE;
 			}
 			else {
 				layer_sequence_headpos(unitSequence, deathStart);
-				ds_list_delete(global.units,ds_list_find_index(global.units, id));
+				//ds_list_delete(global.units,ds_list_find_index(global.units, id));
 				state = DEATH;
 			}
 		}

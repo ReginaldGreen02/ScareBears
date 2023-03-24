@@ -18,10 +18,13 @@ if (event_data[? "event_type"] == "sequence event"){
 		
 		// If Unit Misses
 		case "UnitDeath": // Death of unit
+			global.processUnitDeath = true;
+		break;
+		
 		case "UnitMiss": // Both processes will finish with true, therefore no break needed after this case statement.
 			show_debug_message("I missed!");
 		// If Unit is hurt
-		case "UnitHurt":
+		//case "UnitHurt":
 			// Set Hurt process as finished
 			processFinished = true;
 		break;

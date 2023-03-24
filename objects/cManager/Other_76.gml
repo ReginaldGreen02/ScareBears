@@ -29,6 +29,7 @@ if (event_data[? "event_type"] == "sequence event"){
 		case "SkillSent":
 			selectedFinished = true;
 			skillSent = false;
+			
 		break;
 		
 	}

@@ -37,3 +37,11 @@ function DefendButton(){
 		}
 	}
 }
+
+function SkillMenu(){ // Changes UI layer
+	//TODO: Fill in
+}
+
+function SkillButton(){ // Use button player chooses
+	//TODO: Fill in
+}

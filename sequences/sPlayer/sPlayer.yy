@@ -203,7 +203,7 @@
   ],
   "visibleRange": {
     "x": 0.0,
-    "y": 185.0,
+    "y": 186.0,
   },
   "volume": 1.0,
   "xorigin": 0,

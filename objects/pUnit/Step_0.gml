@@ -55,6 +55,22 @@ switch(state){
 			instance_destroy();
 		}
 	break;
+	case SKILL:
+		if (layer_sequence_get_headpos(unitSequence) > skillEnd){
+			UseSkillPoints(selectedSkill.cost); // Use points after animation is finished
+			turnFinished = true;
+			if (attackWillHit){ // If skill hits
+				//turnFinished = true;
+				layer_sequence_headpos(unitSequence, idleStart);
+				state = IDLE;
+			} else { // If skill misses
+				//turnFinished = true;
+				layer_sequence_headpos(unitSequence, missStart);
+				state = MISS;
+			}
+			selectedSkill = -1; // Reset skill
+		}
+	break;
 }
 
 // Check if we are targeting and if current selected unit is not the same as the target.

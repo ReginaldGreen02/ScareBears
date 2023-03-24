@@ -25,6 +25,7 @@
     {"name":"pUnit","order":2,"path":"objects/pUnit/pUnit.yy",},
     {"name":"Terry_toDefendAnim","order":6,"path":"sprites/Terry_toDefendAnim/Terry_toDefendAnim.yy",},
     {"name":"vButton","order":13,"path":"sprites/vButton/vButton.yy",},
+    {"name":"uiSP","order":15,"path":"sprites/uiSP/uiSP.yy",},
     {"name":"Button","order":1,"path":"scripts/Button/Button.yy",},
     {"name":"Terry_Hurt","order":8,"path":"sprites/Terry_Hurt/Terry_Hurt.yy",},
     {"name":"cSkills","order":6,"path":"objects/cSkills/cSkills.yy",},

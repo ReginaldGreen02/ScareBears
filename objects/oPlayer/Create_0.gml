@@ -23,3 +23,9 @@ missEnd = 130; // 116
 
 deathStart = 131;
 deathEnd = 142;
+
+skillStart = 143;
+skillEnd = 184;
+
+learnedSkill[0] = global.skill[skill.slash]; // Single-target skill
+learnedSkill[1] = global.skill[skill.multiSlash]; // Multi-target skill

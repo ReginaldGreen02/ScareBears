@@ -15,16 +15,19 @@
     "Keyframes": [
       {"resourceType":"Keyframe<MessageEventKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"MessageEventKeyframe","resourceVersion":"1.0","Events":[
               "AttackSent",
-            ],},},"Disabled":false,"id":"8c2917f5-3e7f-4dcc-887e-b02c5ebeb8f5","IsCreationKey":false,"Key":64.0,"Length":1.0,"Stretch":false,},
+            ],},},"Disabled":false,"id":"d62d25ae-844c-4848-b2a0-1c9a035fa502","IsCreationKey":false,"Key":64.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"Keyframe<MessageEventKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"MessageEventKeyframe","resourceVersion":"1.0","Events":[
+              "UnitDefend",
+            ],},},"Disabled":false,"id":"9a7cb1db-9394-424a-90d0-0b5f048b49b1","IsCreationKey":false,"Key":88.0,"Length":1.0,"Stretch":false,},
       {"resourceType":"Keyframe<MessageEventKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"MessageEventKeyframe","resourceVersion":"1.0","Events":[
               "UnitHurt",
-            ],},},"Disabled":false,"id":"1aa7e75b-c663-4eda-b82f-50324b99512e","IsCreationKey":false,"Key":116.0,"Length":1.0,"Stretch":false,},
+            ],},},"Disabled":false,"id":"79b48a6f-5992-4a6a-987e-9b34e453e268","IsCreationKey":false,"Key":116.0,"Length":1.0,"Stretch":false,},
       {"resourceType":"Keyframe<MessageEventKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"MessageEventKeyframe","resourceVersion":"1.0","Events":[
               "UnitMiss",
-            ],},},"Disabled":false,"id":"1d4e6375-904f-49c8-bdf2-59028a02b5a5","IsCreationKey":false,"Key":129.0,"Length":1.0,"Stretch":false,},
+            ],},},"Disabled":false,"id":"34a174e6-dc29-41e5-8f4e-af62b152c64e","IsCreationKey":false,"Key":129.0,"Length":1.0,"Stretch":false,},
       {"resourceType":"Keyframe<MessageEventKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"MessageEventKeyframe","resourceVersion":"1.0","Events":[
               "UnitDeath",
-            ],},},"Disabled":false,"id":"e13956d4-f9f4-401a-9ccc-8464dd7facc7","IsCreationKey":false,"Key":142.0,"Length":1.0,"Stretch":false,},
+            ],},},"Disabled":false,"id":"ad5d7d10-eb22-4969-86bc-bc9b529e065b","IsCreationKey":false,"Key":142.0,"Length":1.0,"Stretch":false,},
     ],
   },
   "eventStubScript": null,
@@ -37,10 +40,13 @@
     "Keyframes": [
       {"resourceType":"Keyframe<MomentsEventKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"MomentsEventKeyframe","resourceVersion":"1.0","Events":[
               "CheckForHit",
-            ],},},"Disabled":false,"id":"f152bd8b-e42b-4d9c-9361-0094ebd9015b","IsCreationKey":false,"Key":40.0,"Length":1.0,"Stretch":false,},
+            ],},},"Disabled":false,"id":"dd204844-c308-469b-a3dc-67861ab28a1e","IsCreationKey":false,"Key":40.0,"Length":1.0,"Stretch":false,},
       {"resourceType":"Keyframe<MomentsEventKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"MomentsEventKeyframe","resourceVersion":"1.0","Events":[
               "UnitAttack",
-            ],},},"Disabled":false,"id":"41dedb04-da3c-490b-b179-aa26f032e9c0","IsCreationKey":false,"Key":63.0,"Length":1.0,"Stretch":false,},
+            ],},},"Disabled":false,"id":"aee16e39-9bd1-4ce6-96f5-8ad7cf6588a6","IsCreationKey":false,"Key":63.0,"Length":1.0,"Stretch":false,},
+      {"resourceType":"Keyframe<MomentsEventKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"MomentsEventKeyframe","resourceVersion":"1.0","Events":[
+              "unitDefend",
+            ],},},"Disabled":false,"id":"8e53c388-1bdf-4946-bc9b-3615885e8e39","IsCreationKey":false,"Key":66.0,"Length":1.0,"Stretch":false,},
     ],
   },
   "parent": {
@@ -171,7 +177,7 @@
       ],"traits":0,},
   ],
   "visibleRange": {
-    "x": 75.0,
+    "x": 0.0,
     "y": 144.0,
   },
   "volume": 1.0,

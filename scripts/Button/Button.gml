@@ -24,3 +24,16 @@ function CancelButton(){
 			event_user(2);
 	}
 }
+
+function DefendButton(){
+	if (cManager.allowInput){ // Check to see if allowed input?
+		with(global.selectedUnit){
+			state = TODEFEND;
+			layer_sequence_headpos(unitSequence, todefendStart); 
+		}
+		with (cManager){
+			// event_user(0); // disable input
+			event_user(1);
+		}
+	}
+}

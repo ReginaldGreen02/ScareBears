@@ -32,9 +32,20 @@ function UnitAttack(){
 	var unit = global.selectedUnit;
 	if (unit.attackWillHit){
 		with(global.selectedTargets){
+			
+			if (defending){
+				defending = false;
+			}
+			
 			incomingDamage = unit.current[@ ATTACKPOWER]; //  (Potential) When bears boost stats, attack multiplier addition?
 			state = HURT;
 			layer_sequence_headpos(unitSequence, hurtStart); // Potential bug(?): May be activating on Player Unit and not selected target. Further tests needed.
 		}
+	}
+}
+
+function unitDefend(){
+	with(global.selectedUnit){
+		defending = true;
 	}
 }

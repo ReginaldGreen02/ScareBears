@@ -26,7 +26,13 @@ switch(combatPhase){
 		for (var i= 0 ; i < ds_list_size(global.units); i++){
 			var inst = global.units[|i];
 			if(inst.turnFinished == false){
+				
+				with (inst){
+					event_user(0);
+				}
+				
 				inst.selected = true;
+				inst.attackWillHit = false;
 				global.selectedUnit = inst;
 				break;
 			}

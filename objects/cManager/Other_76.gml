@@ -9,6 +9,13 @@ if (event_data[? "event_type"] == "sequence event"){
 			//	processFinished = true; // No longer necessary due to processFinished Check down below.
 			//}
 		break;
+		
+		case "UnitDefend":
+			global.selectedUnit.turnFinished = true;
+			selectedFinished = true;
+			processFinished = true;
+		break;
+		
 		// If Unit Misses
 		case "UnitDeath": // Death of unit
 		case "UnitMiss": // Both processes will finish with true, therefore no break needed after this case statement.
@@ -18,5 +25,6 @@ if (event_data[? "event_type"] == "sequence event"){
 			// Set Hurt process as finished
 			processFinished = true;
 		break;
+		
 	}
 }

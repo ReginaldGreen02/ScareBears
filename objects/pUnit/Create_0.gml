@@ -50,8 +50,10 @@ hpBarWidth = sprite_get_width(uiHP);
 hpBarHeight = sprite_get_height(uiHP);
 
 drawTarget = false;
+defending = false;
 
 // Function that updates health when damage is dealt/received
+// TODO: Add statement checking if unit is defending or not to mitigate damage received.
 function DamageUnit(amount){
 	var damage = amount - current[@DEFENSEPOWER]; // (Potential) When bears boost stats, defense multiplier addition?
 	if (damage < 0){

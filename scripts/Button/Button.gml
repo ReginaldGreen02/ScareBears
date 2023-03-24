@@ -16,13 +16,18 @@ function AttackButton(){
 }
 
 function CancelButton(){
+	global.selectedUnit.selectedSkill = -1;
 	global.targeting = false;
+	global.skillTargeting = false;
 	ds_list_clear(global.targets); // Clear all targets
 	with (cManager){
 		event_user(1); // Enable BaseUI
 		if (layer_get_visible(targetUI)) // If TargetUI is visible
 			event_user(2);
-	}
+			
+		else if (layer_get_visible(skillsUI))
+			event_user(3);
+	} 
 }
 
 function DefendButton(){
@@ -39,9 +44,38 @@ function DefendButton(){
 }
 
 function SkillMenu(){ // Changes UI layer
-	//TODO: Fill in
+	with (cManager){
+		event_user(0); // Disable input
+		event_user(1); // Disable BaseUI
+		event_user(3); // Turn on SkillUI
+		event_user(0); // Enable input
+	}
 }
 
 function SkillButton(){ // Use button player chooses
-	//TODO: Fill in
+	// Store cost of skill
+	var _cost = global.selectedUnit.learnedSkill[@ ds_list_find_index(global.skillsButtons, id)].cost;
+	// Check current SP of selectedUnit
+	var _sp = global.selectedUnit.current[@ SKILLPOINTS];
+	if (_sp >= _cost){
+		global.skillTargeting = true;
+		// Grab skill from buttons, set id to the selectedSkill
+		global.selectedUnit.selectedSkill = global.selectedUnit.learnedSkill[@ ds_list_find_index(global.skillsButtons, id)];
+		for (var i = 0; i < ds_list_size(global.units); i++){
+			var _inst = global.units[| i];
+			if (_inst != global.selectedUnit){
+				// Temporary until we add teams
+				ds_list_add(global.targets, _inst);
+			}
+		}
+		with (cManager){
+			event_user(0); // Disable input
+			event_user(2); 
+			event_user(3); 
+			event_user(0); // Enable input
+			}
+	}else {
+		show_message("Not enough skill points!");
+	}
+	
 }

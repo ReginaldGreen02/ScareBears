@@ -17,12 +17,39 @@ if (global.targeting){ // Check if we are targeting
 	if (position_meeting(mouse_x, mouse_y, pUnit)){ // Check if mouse cursor is in contact with anything that is a child of pUnit
 		var unit = instance_position(mouse_x, mouse_y, pUnit); // store that id into a variable
 		if (unit != global.selectedUnit){
-			global.selectedTargets = noone;
+			ds_list_clear(global.selectedTargets);
 			with (global.selectedUnit){
 				state = ATTACK;
 				layer_sequence_headpos(unitSequence, attackStart);
 			}
-			global.selectedTargets = unit; 
+			ds_list_add(global.selectedTargets, unit);
 		}
 	}
 }
+
+
+
+if (global.skillTargeting){ // Check if we are targeting
+	if (position_meeting(mouse_x, mouse_y, pUnit)){ // Check if mouse cursor is in contact with anything that is a child of pUnit
+		var unit = instance_position(mouse_x, mouse_y, pUnit); // store that id into a variable
+		// if (_unit.unitTeam != global.selectedUnit.unitTeam){ // TODO: Create Teams!
+			var _skill = global.selectedUnit.selectedSkill; // Reference skill
+			ds_list_clear(global.selectedTargets);
+			
+			with (global.selectedUnit){
+				state = SKILL;
+				layer_sequence_headpos(unitSequence, skillStart);
+			}
+			script_execute(_skill.action, unit); // Activate script
+		//}
+	}
+}
+
+
+
+
+
+
+
+
+

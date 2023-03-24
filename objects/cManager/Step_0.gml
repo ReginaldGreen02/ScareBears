@@ -3,6 +3,9 @@ switch(combatPhase){
 		layer_set_visible(targetUI, false); //Set layer invisible
 		instance_deactivate_layer(targetUI); // Disable instance layer interaction
 		layer_set_visible(baseUI, false); // Set layer invisible, keep interaction possible
+		
+		layer_set_visible(skillsUI, false); //Set layer invisible
+		instance_deactivate_layer(skillsUI); // Disable instance layer interaction
 	
 		for(var i = 0; i < instance_number(cSpawn); i++ ){
 			var spawner = instance_find(cSpawn, i);
@@ -89,6 +92,9 @@ switch(combatPhase){
 		global.selectedTargets = noone;
 		
 		ds_list_clear(global.targets); // Clear targets list
+		
+		global.skillTargeting = false;
+		ds_list_clear(global.selectedTargets); // Clear selectedTargets list
 		
 		combatPhase =phase.startTurn;
 	break;

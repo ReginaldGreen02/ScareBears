@@ -27,6 +27,7 @@
     {"name":"vButton","order":13,"path":"sprites/vButton/vButton.yy",},
     {"name":"Button","order":1,"path":"scripts/Button/Button.yy",},
     {"name":"Terry_Hurt","order":8,"path":"sprites/Terry_Hurt/Terry_Hurt.yy",},
+    {"name":"cSkills","order":6,"path":"objects/cSkills/cSkills.yy",},
     {"name":"Sprite3","order":2,"path":"sprites/Sprite3/Sprite3.yy",},
     {"name":"Terry_Miss","order":7,"path":"sprites/Terry_Miss/Terry_Miss.yy",},
     {"name":"vTargeting","order":14,"path":"sprites/vTargeting/vTargeting.yy",},

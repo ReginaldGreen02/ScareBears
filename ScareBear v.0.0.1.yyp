@@ -45,6 +45,7 @@
     {"id":{"name":"vButton","path":"sprites/vButton/vButton.yy",},},
     {"id":{"name":"Button","path":"scripts/Button/Button.yy",},},
     {"id":{"name":"Terry_Hurt","path":"sprites/Terry_Hurt/Terry_Hurt.yy",},},
+    {"id":{"name":"cSkills","path":"objects/cSkills/cSkills.yy",},},
     {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},},
     {"id":{"name":"cManager","path":"objects/cManager/cManager.yy",},},
     {"id":{"name":"Terry_Miss","path":"sprites/Terry_Miss/Terry_Miss.yy",},},

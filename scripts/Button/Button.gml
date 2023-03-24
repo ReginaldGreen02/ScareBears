@@ -79,3 +79,9 @@ function SkillButton(){ // Use button player chooses
 	}
 	
 }
+
+function DebugWin(){
+	with (cManager){
+		combatPhase = phase.win;
+	}
+}

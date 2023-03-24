@@ -15,6 +15,7 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
+    {"name":"debug","order":8,"path":"folders/Objects/debug.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"Sprite2","order":1,"path":"sprites/Sprite2/Sprite2.yy",},
@@ -30,6 +31,7 @@
     {"name":"pOW","order":3,"path":"objects/pOW/pOW.yy",},
     {"name":"Terry_toDefendAnim","order":6,"path":"sprites/Terry_toDefendAnim/Terry_toDefendAnim.yy",},
     {"name":"vButton","order":13,"path":"sprites/vButton/vButton.yy",},
+    {"name":"rmGameOver","order":2,"path":"rooms/rmGameOver/rmGameOver.yy",},
     {"name":"uiSP","order":15,"path":"sprites/uiSP/uiSP.yy",},
     {"name":"Button","order":1,"path":"scripts/Button/Button.yy",},
     {"name":"Terry_Hurt","order":8,"path":"sprites/Terry_Hurt/Terry_Hurt.yy",},

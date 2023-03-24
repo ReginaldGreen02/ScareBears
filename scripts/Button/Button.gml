@@ -85,3 +85,13 @@ function DebugWin(){
 		combatPhase = phase.win;
 	}
 }
+
+function DebugRestart(){
+	game_restart();
+}
+
+function DebugLose(){
+	with (cManager){
+		combatPhase = phase.lose;
+	}
+}

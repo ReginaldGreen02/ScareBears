@@ -20,6 +20,7 @@
     {"name":"inst_2A0F7084","path":"rooms/rmCombat/rmCombat.yy",},
     {"name":"inst_14D4A0FD","path":"rooms/rmCombat/rmCombat.yy",},
     {"name":"inst_15AACA9A","path":"rooms/rmCombat/rmCombat.yy",},
+    {"name":"inst_7FA6FE11","path":"rooms/rmCombat/rmCombat.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -60,6 +61,10 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pButton","path":"objects/pButton/pButton.yy",},"propertyId":{"name":"Label","path":"objects/pButton/pButton.yy",},"value":"debug: Win",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pButton","path":"objects/pButton/pButton.yy",},"propertyId":{"name":"MainFunc","path":"objects/pButton/pButton.yy",},"value":"DebugWin",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":544.0,"y":32.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7FA6FE11","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oButtonGeneric","path":"objects/oButtonGeneric/oButtonGeneric.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pButton","path":"objects/pButton/pButton.yy",},"propertyId":{"name":"Label","path":"objects/pButton/pButton.yy",},"value":"debug: Lose",},
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"pButton","path":"objects/pButton/pButton.yy",},"propertyId":{"name":"MainFunc","path":"objects/pButton/pButton.yy",},"value":"DebugLose",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":544.0,"y":96.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"sequences","assets":[],"depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[

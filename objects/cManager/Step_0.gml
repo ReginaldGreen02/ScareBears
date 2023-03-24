@@ -155,6 +155,7 @@ switch(combatPhase){
 	
 	case  phase.lose:
 		// Add gameover
-		show_message("Oh no! You Lost!")
+		//show_message("Oh no! You Lost!")
+		room_goto(rmGameOver);
 	break;
 }

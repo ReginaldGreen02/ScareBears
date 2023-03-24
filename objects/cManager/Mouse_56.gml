@@ -16,7 +16,7 @@
 if (global.targeting){ // Check if we are targeting
 	if (position_meeting(mouse_x, mouse_y, pUnit)){ // Check if mouse cursor is in contact with anything that is a child of pUnit
 		var unit = instance_position(mouse_x, mouse_y, pUnit); // store that id into a variable
-		if (unit != global.selectedUnit){
+		if (unit.team != global.selectedUnit.team){
 			ds_list_clear(global.selectedTargets);
 			with (global.selectedUnit){
 				state = ATTACK;
@@ -32,7 +32,7 @@ if (global.targeting){ // Check if we are targeting
 if (global.skillTargeting){ // Check if we are targeting
 	if (position_meeting(mouse_x, mouse_y, pUnit)){ // Check if mouse cursor is in contact with anything that is a child of pUnit
 		var unit = instance_position(mouse_x, mouse_y, pUnit); // store that id into a variable
-		// if (_unit.unitTeam != global.selectedUnit.unitTeam){ // TODO: Create Teams!
+		if (unit.team != global.selectedUnit.team){ // TODO: Create Teams!
 			var _skill = global.selectedUnit.selectedSkill; // Reference skill
 			ds_list_clear(global.selectedTargets);
 			
@@ -41,7 +41,7 @@ if (global.skillTargeting){ // Check if we are targeting
 				layer_sequence_headpos(unitSequence, skillStart);
 			}
 			script_execute(_skill.action, unit); // Activate script
-		//}
+		}
 	}
 }
 

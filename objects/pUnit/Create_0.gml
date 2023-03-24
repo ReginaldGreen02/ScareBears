@@ -53,6 +53,8 @@ hpBarHeight = sprite_get_height(uiHP);
 drawTarget = false;
 defending = false;
 
+team = 0; //0 = ally, 1 = enemy, 2 = neutral
+
 function UseSkillPoints(amount){
 	current[SKILLPOINTS] -= amount;
 }

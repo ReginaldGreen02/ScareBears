@@ -8,3 +8,6 @@
 if (drawTarget) draw_sprite(vTargeting, 0, x, y);
 
 if (selected) draw_sprite(vMarker, 0, x, y);
+
+// Team number debug
+draw_text(x,y, string(team));

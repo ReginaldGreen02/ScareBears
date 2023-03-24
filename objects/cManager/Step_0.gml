@@ -9,13 +9,29 @@ switch(combatPhase){
 	
 		for(var i = 0; i < instance_number(cSpawn); i++ ){
 			var spawner = instance_find(cSpawn, i);
-			var unit = instance_create_depth(spawner.x,spawner.y,0,oPlayer);
-			ds_list_add(global.units,unit);
+			//var unit = instance_create_depth(spawner.x,spawner.y,0,oPlayer);
+			//ds_list_add(global.units,unit);
+			
+			// If unit spawns on left side of room, set as ally
+			// If unit spawns on right side of room, set as enemy
+			if (spawner.x < room_width/2){
+				var unit = instance_create_depth(spawner.x, spawner.y, 0, oPlayer);
+				unit.team = 0; // Create an ally
+			} else {
+				var unit = instance_create_depth(spawner.x, spawner.y, 0, oPlayer);
+				unit.team = 1; // Create an enemy
+			}
+			//ds_list_add(global.units, unit);
 		}
 		combatPhase = phase.startTurn;
 	break;
 	
 	case  phase.startTurn:
+		// Loop through scenes to check for child objects of parent unit
+		for (var i = 0; i < instance_number(pUnit); i++){
+			var _inst = instance_find(pUnit, i);
+			ds_list_add(global.units, _inst); // Reset list
+		}		
 		BubbleSort(global.units);
 		
 		if( unitsFinished >= ds_list_size(global.units)){
@@ -50,6 +66,10 @@ switch(combatPhase){
 	break;
 	
 	case  phase.wait:
+		if (global.selectedUnit.team > 0 && !aiDone){
+			AIChoose();
+		}
+		
 		if(selectedFinished == true){
 			global.selectedUnit.selected = false;
 			unitsFinished++;
@@ -64,8 +84,14 @@ switch(combatPhase){
 	break;
 	
 	case  phase.process:
+		allies = 0;
+		enemies = 0;
+		
+		
 		if(processFinished){
-			combatPhase = phase.checkFinish;
+			global.selectedUnit = noone;
+			//processFinished = false;
+			
 			
 			global.targeting = false; // May be redundant
 			for (var i = 0; i < ds_list_size(global.units); i++){
@@ -73,14 +99,33 @@ switch(combatPhase){
 					drawTarget = false; 
 				}
 			}
+			combatPhase = phase.checkFinish;
 		}
 
 	break;
 	
 	case  phase.checkFinish:
 		processFinished = false;
-		//if(keyboard_check_released(vk_space))
+		
+		for (var i = 0; i < ds_list_size(global.units); i++){
+			var _unit = global.units[| i];
+			if (_unit.team == 0){ // If unit team is 0
+				allies++;
+			}
+			else enemies++;
+		}
+		
+		if (allies<0){
+			combatPhase = phase.lose;
+		}
+		else if (enemies <= 0){
+			combatPhase = phase.win;
+		}
+		else {
 			combatPhase = phase.endTurn;
+		}
+		//if(keyboard_check_released(vk_space))
+			//combatPhase = phase.endTurn;
 		/*if(keyboard_check_released(vk_enter))
 			combatPhase = phase.win;
 		if(keyboard_check_released(vk_control))
@@ -89,6 +134,7 @@ switch(combatPhase){
 	
 	case  phase.endTurn:
 		selectedFinished = false;
+		//processFinished = false;
 		//global.selectedTargets = noone;
 		
 		ds_list_clear(global.targets); // Clear targets list
@@ -96,14 +142,19 @@ switch(combatPhase){
 		global.skillTargeting = false;
 		ds_list_clear(global.selectedTargets); // Clear selectedTargets list
 		
-		combatPhase =phase.startTurn;
+		ds_list_clear(global.units); // Clear list
+		aiDone = false; // Set back to false after enemy takes turn
+		
+		combatPhase = phase.startTurn;
 	break;
 	
 	case  phase.win:
-		// What haoppens if we win
+		// Add whatever else here
+		show_message("Hooray! You Won!");
 	break;
 	
 	case  phase.lose:
-		//what happenes if we lose
+		// Add gameover
+		show_message("Oh no! You Lost!")
 	break;
 }

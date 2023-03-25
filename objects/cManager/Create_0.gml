@@ -52,3 +52,4 @@ function ProcessDeath(){
 	}
 }
 
+global.isEscapable = true;

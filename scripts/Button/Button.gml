@@ -99,3 +99,44 @@ function DebugLose(){
 function DebugQuitGame(){
 	game_end();
 }
+
+function EscapeBattle(){
+	if (global.isEscapable){
+		var playerSpeed = GetPlayerTotalSpeed();
+		var enemySpeed = GetEnemyTotalSpeed();
+		
+		// Dice roll escape
+		//if (playerSpeed > 10){
+		//	room_goto_previous();
+		//}
+		
+		// Speed-based escape
+		if (playerSpeed >= enemySpeed){
+			room_goto_previous();
+		}
+		else show_message("Can't escape right now!");
+	}
+	else {
+		show_message("Can't escape right now!");
+	}
+}
+
+function GetPlayerTotalSpeed(){
+	var returnValue = 0;
+	for (i = 0; i < ds_list_size(global.units); i++){
+		if (global.units[| i].team == 0){
+			returnValue += global.units[|i].current[SPEED];
+		}
+	}
+	return returnValue;
+}
+
+function GetEnemyTotalSpeed(){
+	var returnValue = 0;
+	for (i = 0; i < ds_list_size(global.units); i++){
+		if (global.units[| i].team == 1){
+			returnValue += global.units[|i].current[SPEED];
+		}
+	}
+	return returnValue;
+}

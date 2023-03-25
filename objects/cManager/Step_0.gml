@@ -23,7 +23,7 @@ switch(combatPhase){
 			}
 			//ds_list_add(global.units, unit);
 		}
-		show_message("Enemies Appeared!");
+		//show_message("Enemies Appeared!"); //Broadcast Message
 		combatPhase = phase.startTurn;
 	break;
 	

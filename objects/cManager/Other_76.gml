@@ -2,7 +2,7 @@ if (event_data[? "event_type"] == "sequence event"){
 	switch(event_data[? "message"]){
 		// When Unit attacks
 		case "AttackSent":
-			show_message(string(global.selectedUnit)+" attacks!");
+			show_debug_message(string(global.selectedUnit)+" attacks!");
 			// Set target selected process as finished
 			selectedFinished = true;
 			//if (!global.selectedUnit.attackWillHit){ // Debug messages
@@ -11,7 +11,7 @@ if (event_data[? "event_type"] == "sequence event"){
 		break;
 		
 		case "UnitDefend":
-			show_message(string(global.selectedUnit)+" defends!");
+			show_debug_message(string(global.selectedUnit)+" defends!");
 			global.selectedUnit.turnFinished = true;
 			selectedFinished = true;
 			processFinished = true;
@@ -31,7 +31,7 @@ if (event_data[? "event_type"] == "sequence event"){
 		break;
 		
 		case "SkillSent":
-			show_message(string(global.selectedUnit)+" uses "+string(global.selectedUnit.selectedSkill.name));
+			show_debug_message(string(global.selectedUnit)+" uses "+string(global.selectedUnit.selectedSkill.name));
 			selectedFinished = true;
 			skillSent = false;
 			

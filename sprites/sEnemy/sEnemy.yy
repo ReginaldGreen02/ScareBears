@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "Sprite1",
+  "name": "sEnemy",
   "bbox_bottom": 23,
   "bbox_left": 0,
   "bbox_right": 23,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"952a17c0-8b2a-442f-8e5f-6965fa7305d5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7fd70415-780a-451e-9bd9-27667987763f",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 24,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"20eedb9e-6985-42fd-b8f8-07d0e46222e3","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ebde7fe0-432d-449f-9a1f-54fff0a60615","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "Sprite1",
+    "name": "sEnemy",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"952a17c0-8b2a-442f-8e5f-6965fa7305d5","path":"sprites/Sprite1/Sprite1.yy",},},},"Disabled":false,"id":"11d4737a-6ab9-4bd0-8a20-f2164f29190d","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7fd70415-780a-451e-9bd9-27667987763f","path":"sprites/sEnemy/sEnemy.yy",},},},"Disabled":false,"id":"d54e6864-756a-44fb-b484-53eee85498d8","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

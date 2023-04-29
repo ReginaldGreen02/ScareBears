@@ -65,6 +65,7 @@
     {"id":{"name":"vTargeting","path":"sprites/vTargeting/vTargeting.yy",},},
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},},
     {"id":{"name":"Terry_Defend","path":"sprites/Terry_Defend/Terry_Defend.yy",},},
+    {"id":{"name":"sEnemy","path":"sprites/sEnemy/sEnemy.yy",},},
     {"id":{"name":"sPlayer","path":"sequences/sPlayer/sPlayer.yy",},},
     {"id":{"name":"owPlayer","path":"objects/owPlayer/owPlayer.yy",},},
     {"id":{"name":"vMarker","path":"sprites/vMarker/vMarker.yy",},},

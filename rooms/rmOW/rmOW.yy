@@ -12,7 +12,7 @@
   ],
   "isDnd": false,
   "layers": [
-    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":12,"SerialiseWidth":20,"TileCompressedData":[
+    {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Col","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":12,"SerialiseWidth":20,"TileCompressedData":[
 -21,-2147483648,-4,1,-6,-2147483648,-2,1,-13,-2147483648,1,1,-5,-2147483648,-2,1,-13,-2147483648,1,1,
 -5,-2147483648,-2,1,-11,-2147483648,1,1,-7,-2147483648,1,1,-11,-2147483648,1,1,-10,-2147483648,1,1,
 -8,-2147483648,4,1,-2147483648,-2147483648,1,-7,-2147483648,1,1,-11,-2147483648,-2,1,-6,-2147483648,1,1,-12,

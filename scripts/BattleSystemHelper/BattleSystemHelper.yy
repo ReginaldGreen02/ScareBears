@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "Helper",
+  "name": "BattleSystemHelper",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {

@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "vTargeting",
-    "path": "sprites/vTargeting/vTargeting.yy",
+    "name": "sEnemy",
+    "path": "sprites/sEnemy/sEnemy.yy",
   },
   "spriteMaskId": null,
   "visible": true,

@@ -43,6 +43,7 @@
     {"name":"obj_Text","order":9,"path":"objects/obj_Text/obj_Text.yy",},
     {"name":"vTargeting","order":14,"path":"sprites/vTargeting/vTargeting.yy",},
     {"name":"Terry_Defend","order":9,"path":"sprites/Terry_Defend/Terry_Defend.yy",},
+    {"name":"sEnemy","order":17,"path":"sprites/sEnemy/sEnemy.yy",},
     {"name":"vMarker","order":10,"path":"sprites/vMarker/vMarker.yy",},
     {"name":"pButton","order":4,"path":"objects/pButton/pButton.yy",},
     {"name":"Terry_DeathAnim","order":12,"path":"sprites/Terry_DeathAnim/Terry_DeathAnim.yy",},

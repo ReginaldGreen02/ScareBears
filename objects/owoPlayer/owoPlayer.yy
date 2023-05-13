@@ -34,9 +34,12 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Sprite3",
-    "path": "sprites/Sprite3/Sprite3.yy",
+    "name": "sHeroBear",
+    "path": "sprites/sHeroBear/sHeroBear.yy",
   },
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "sHeroBear",
+    "path": "sprites/sHeroBear/sHeroBear.yy",
+  },
   "visible": true,
 }

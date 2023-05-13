@@ -31,7 +31,7 @@ PlayerCollision();
 
 //Update Sprite Index
 
-/*var _oldSprite = sprite_index;
+var _oldSprite = sprite_index;
 if (inputMagnitude != 0)
 {
 	direction = inputDirection; // Auto-wrap angle to be correct value;
@@ -42,6 +42,6 @@ if (_oldSprite != sprite_index) localFrame = 0; //Reset when changing animations
 
 //Update Image Index
 PlayerAnimateSprite();
-*/
+
 
 //if (global.gamePaused) script_execute(state);

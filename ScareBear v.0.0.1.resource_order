@@ -7,6 +7,7 @@
     {"name":"Objects","order":9,"path":"folders/Objects.yy",},
     {"name":"debug","order":8,"path":"folders/Objects/debug.yy",},
     {"name":"Overworld","order":7,"path":"folders/Objects/Overworld.yy",},
+    {"name":"Managers","order":2,"path":"folders/Objects/Overworld/Managers.yy",},
     {"name":"Paths","order":4,"path":"folders/Paths.yy",},
     {"name":"Rooms","order":10,"path":"folders/Rooms.yy",},
     {"name":"Scripts","order":5,"path":"folders/Scripts.yy",},
@@ -16,7 +17,6 @@
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Managers","order":2,"path":"folders/Objects/Overworld/Managers.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"Sprite2","order":1,"path":"sprites/Sprite2/Sprite2.yy",},
@@ -44,6 +44,7 @@
     {"name":"Terry_toDefendAnim","order":6,"path":"sprites/Terry_toDefendAnim/Terry_toDefendAnim.yy",},
     {"name":"vButton","order":13,"path":"sprites/vButton/vButton.yy",},
     {"name":"sHeroBearSeq","order":1,"path":"sequences/sHeroBearSeq/sHeroBearSeq.yy",},
+    {"name":"ScreenShake","order":7,"path":"scripts/ScreenShake/ScreenShake.yy",},
     {"name":"rmGameOver","order":1,"path":"rooms/rmGameOver/rmGameOver.yy",},
     {"name":"uiSP","order":15,"path":"sprites/uiSP/uiSP.yy",},
     {"name":"sHeroBear","order":25,"path":"sprites/sHeroBear/sHeroBear.yy",},

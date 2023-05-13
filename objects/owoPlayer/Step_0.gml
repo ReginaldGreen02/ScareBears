@@ -44,3 +44,4 @@ if (_oldSprite != sprite_index) localFrame = 0; //Reset when changing animations
 PlayerAnimateSprite();
 */
 
+//if (global.gamePaused) script_execute(state);

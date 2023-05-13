@@ -15,8 +15,8 @@
     "path": "folders/Objects/Overworld.yy",
   },
   "parentObjectId": {
-    "name": "pOW",
-    "path": "objects/pOW/pOW.yy",
+    "name": "pOWParent",
+    "path": "objects/pOWParent/pOWParent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,

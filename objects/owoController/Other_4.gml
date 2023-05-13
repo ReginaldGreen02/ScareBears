@@ -1,1 +1,3 @@
-//if (room_persistent) room_persistent = false;
+/// @desc Layer Management
+layer_set_visible("Col", false);
+

@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "pOW",
+  "name": "pOWParent",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],

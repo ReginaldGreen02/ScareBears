@@ -1,3 +1,3 @@
-#macro FRAME_RATE 60
+#macro FRAME_RATE 240
 #macro TILE_SIZE 16
 #macro ROOM_START rmOWVillage

@@ -1,8 +1,10 @@
 // Inherit the parent event
 event_inherited();
 
-unitSequence = layer_sequence_create("sequences",x,y,sPlayer);
+unitSequence = layer_sequence_create("sequences",x,y,sHeroBearSeq);
+//unitSequence = layer_sequence_create("sequences",x,y,sPlayer);
 
+/*
 idleStart = 2;
 idleEnd= 22;
 
@@ -26,6 +28,34 @@ deathEnd = 142;
 
 skillStart = 143;
 skillEnd = 184;
+
+learnedSkill[0] = global.skill[skill.slash]; // Single-target skill
+learnedSkill[1] = global.skill[skill.multiSlash]; // Multi-target skill
+*/
+
+idleStart = 2;
+idleEnd= 9;
+
+attackStart =10;
+attackEnd = 19;
+
+todefendStart = 74;
+todefendEnd = 79;
+
+defendStart = 80;
+defendEnd  = 84;
+
+hurtStart = 96;
+hurtEnd = 100;
+
+missStart = 85; // 105
+missEnd = 95; // 116
+
+deathStart = 101;
+deathEnd = 112;
+
+skillStart = 20;
+skillEnd = 52;
 
 learnedSkill[0] = global.skill[skill.slash]; // Single-target skill
 learnedSkill[1] = global.skill[skill.multiSlash]; // Multi-target skill

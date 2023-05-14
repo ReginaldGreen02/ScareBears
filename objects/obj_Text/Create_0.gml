@@ -1,4 +1,4 @@
-text[0] = "Enemies Appeared!"
+/*text[0] = "Enemies Appeared!"
 
 // Following text array for the battle system causes too
 // many issues. It is currently commented out until the rest of the game
@@ -14,7 +14,7 @@ text[7] = "You won!";
 text[8] = "Oh no! You lost!";
 //text[9] = string(global.deadUnit)+" died."
 text[10] = "Attack HIT!";
-*/
+
 
 text_current = 0; 
 text_last = 1;
@@ -26,3 +26,4 @@ char_current = 1;
 char_speed = 0.25;
 
 text[text_current] = spr_Dialog(text[text_current], text_width);
+*/

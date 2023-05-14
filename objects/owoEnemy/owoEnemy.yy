@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "sEnemy",
-    "path": "sprites/sEnemy/sEnemy.yy",
+    "name": "Terry_IdleAnim",
+    "path": "sprites/Terry_IdleAnim/Terry_IdleAnim.yy",
   },
   "spriteMaskId": null,
   "visible": true,

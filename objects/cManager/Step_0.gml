@@ -107,7 +107,8 @@ switch(combatPhase){
 	case  phase.checkFinish:
 		processFinished = false;
 		
-		for (var i = 0; i < ds_list_size(global.units); i++){
+		for (var i = 0; i < ds_list_size(global.units); i++)
+		{
 			var _unit = global.units[| i];
 			if (_unit.team == 0){ // If unit team is 0
 				allies++;

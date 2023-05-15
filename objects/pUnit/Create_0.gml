@@ -27,12 +27,12 @@
 
 state = IDLE;
 
-base[HEALTH]  =10;
+base[HEALTH] = 10;
 base[SKILLPOINTS] = 5;
 base[SPEED] = irandom_range(1,10);
 base[ATTACKPOWER] = irandom_range(1,5);
 base[DEFENSEPOWER] = 1;
-base[ACCURACY] = 0.5;
+base[ACCURACY] = 0.1;
 // base[CURRENTACCURACY] = 0.5; // Potential addition for live accuracy updates
 
  

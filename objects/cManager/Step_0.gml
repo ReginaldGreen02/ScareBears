@@ -115,7 +115,7 @@ switch(combatPhase){
 			else enemies++;
 		}
 		
-		if (allies<0){
+		if (allies <= 0){
 			combatPhase = phase.lose;
 		}
 		else if (enemies <= 0){

@@ -37,25 +37,25 @@ idleStart = 2;
 idleEnd= 9;
 
 attackStart =10;
-attackEnd = 19;
+attackEnd = 27;
 
-todefendStart = 74;
-todefendEnd = 79;
+todefendStart = 82;
+todefendEnd = 87;
 
-defendStart = 80;
-defendEnd  = 84;
+defendStart = 88;
+defendEnd  = 92;
 
-hurtStart = 96;
-hurtEnd = 100;
+hurtStart = 104;
+hurtEnd = 108;
 
-missStart = 85; // 105
-missEnd = 95; // 116
+missStart = 93; // 105
+missEnd = 103; // 116
 
-deathStart = 101;
-deathEnd = 112;
+deathStart = 109;
+deathEnd = 120;
 
-skillStart = 20;
-skillEnd = 52;
+skillStart = 121;
+skillEnd = 158;
 
 learnedSkill[0] = global.skill[skill.slash]; // Single-target skill
 learnedSkill[1] = global.skill[skill.multiSlash]; // Multi-target skill

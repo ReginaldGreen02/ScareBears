@@ -61,8 +61,8 @@ function UnitSkill(){
 					defending = false;
 				}
 				incomingDamage = global.selectedUnit.selectedSkill.healthChange;
-				state = HURT;
-				layer_sequence_headpos(unitSequence, hurtStart);
+				state = SKILLHURT;
+				layer_sequence_headpos(unitSequence, hurtClawStart);
 			}
 		}
 	}

@@ -40,6 +40,7 @@
     {"id":{"name":"Background","path":"sprites/Background/Background.yy",},},
     {"id":{"name":"fnt_basic","path":"fonts/fnt_basic/fnt_basic.yy",},},
     {"id":{"name":"Sprite8","path":"sprites/Sprite8/Sprite8.yy",},},
+    {"id":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},},
     {"id":{"name":"oButtonGeneric","path":"objects/oButtonGeneric/oButtonGeneric.yy",},},
     {"id":{"name":"sHeroPlayerRun","path":"sprites/sHeroPlayerRun/sHeroPlayerRun.yy",},},
     {"id":{"name":"sHeroBear_DeathAnim","path":"sprites/sHeroBear_DeathAnim/sHeroBear_DeathAnim.yy",},},

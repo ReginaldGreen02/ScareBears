@@ -18,7 +18,7 @@ switch(combatPhase){
 				var unit = instance_create_depth(spawner.x, spawner.y, 0, oPlayer);
 				unit.team = 0; // Create an ally
 			} else {
-				var unit = instance_create_depth(spawner.x, spawner.y, 0, oPlayer);
+				var unit = instance_create_depth(spawner.x, spawner.y, 0, oEnemy);
 				unit.team = 1; // Create an enemy
 			}
 			//ds_list_add(global.units, unit);

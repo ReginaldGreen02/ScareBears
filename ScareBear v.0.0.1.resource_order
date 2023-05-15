@@ -22,6 +22,7 @@
     {"name":"Sprite2","order":1,"path":"sprites/Sprite2/Sprite2.yy",},
     {"name":"Background","order":4,"path":"sprites/Background/Background.yy",},
     {"name":"Sprite8","order":16,"path":"sprites/Sprite8/Sprite8.yy",},
+    {"name":"oEnemy","order":10,"path":"objects/oEnemy/oEnemy.yy",},
     {"name":"oButtonGeneric","order":5,"path":"objects/oButtonGeneric/oButtonGeneric.yy",},
     {"name":"sHeroPlayerRun","order":24,"path":"sprites/sHeroPlayerRun/sHeroPlayerRun.yy",},
     {"name":"sHeroBear_DeathAnim","order":29,"path":"sprites/sHeroBear_DeathAnim/sHeroBear_DeathAnim.yy",},

@@ -53,6 +53,7 @@
     {"id":{"name":"sHeroBear_SkillTargetM","path":"sprites/sHeroBear_SkillTargetM/sHeroBear_SkillTargetM.yy",},},
     {"id":{"name":"uiHP","path":"sprites/uiHP/uiHP.yy",},},
     {"id":{"name":"sWalls","path":"sprites/sWalls/sWalls.yy",},},
+    {"id":{"name":"Sprite34","path":"sprites/Sprite34/Sprite34.yy",},},
     {"id":{"name":"MACROS","path":"scripts/MACROS/MACROS.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"rmOWInit","path":"rooms/rmOWInit/rmOWInit.yy",},},

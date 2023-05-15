@@ -35,6 +35,7 @@
     {"name":"sHeroBear_SkillTargetM","order":34,"path":"sprites/sHeroBear_SkillTargetM/sHeroBear_SkillTargetM.yy",},
     {"name":"uiHP","order":11,"path":"sprites/uiHP/uiHP.yy",},
     {"name":"sWalls","order":22,"path":"sprites/sWalls/sWalls.yy",},
+    {"name":"Sprite34","order":5,"path":"sprites/Sprite34/Sprite34.yy",},
     {"name":"MACROS","order":4,"path":"scripts/MACROS/MACROS.yy",},
     {"name":"oPlayer","order":3,"path":"objects/oPlayer/oPlayer.yy",},
     {"name":"rmOWInit","order":4,"path":"rooms/rmOWInit/rmOWInit.yy",},

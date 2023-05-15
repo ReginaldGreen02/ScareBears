@@ -39,6 +39,24 @@ switch(state){
 			}
 		}
 	break;
+	case SKILLHURT:
+		if(layer_sequence_get_headpos(unitSequence) > hurtClawEnd){
+			DamageUnit(incomingDamage);
+			if (current[@ HEALTH] > 0){
+				cManager.processFinished = true; // fixes...HACK
+				layer_sequence_headpos(unitSequence, hurtStart);
+				incomingDamage = 0;
+				state = HURT;
+			}
+			/*else {
+				layer_sequence_headpos(unitSequence, deathStart);
+				//ds_list_delete(global.units,ds_list_find_index(global.units, id));
+				state = DEATH;
+			}*/
+			//layer_sequence_headpos(unitSequence,hurtStart)
+			//state = HURT;
+		}
+	break;
 	case TODEFEND:
 		if(layer_sequence_get_headpos(unitSequence) > todefendEnd){
 			layer_sequence_headpos(unitSequence, defendStart);

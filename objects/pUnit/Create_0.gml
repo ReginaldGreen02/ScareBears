@@ -24,6 +24,7 @@
 #macro MISS 5
 #macro DEATH 6
 #macro SKILL 7
+#macro SKILLHURT 8
 
 state = IDLE;
 
